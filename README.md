@@ -7,7 +7,7 @@ adapts it through an explicit interface, and compares its behavior against the
 unchanged original. It produces code you can inspect and a dependency and
 verification record you can replay.
 
-An open-source project from [Gradia](https://www.gradiahq.com).
+An open-source project from [Gradia Research](https://www.gradiahq.com/research#code-transplant).
 
 ## Run the first proof
 
