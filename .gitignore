@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.claude-flow/
+.swarm/
+.claude/
+agentdb.rvf*
+ruvector.db*
+.transplant/
+.DS_Store
+*.tgz

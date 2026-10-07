@@ -1,0 +1,54 @@
+{
+  "schema": "code-transplant.donor.v1",
+  "repository": "https://github.com/date-fns/date-fns",
+  "tag": "v4.1.0",
+  "revision": "313b902b9a72c64501074db9bc2b9897d2db5140",
+  "license": "MIT",
+  "files": [
+    {
+      "path": "src/parseISO/index.ts",
+      "upstreamPath": "src/parseISO/index.ts",
+      "sha256": "b20371e2bb654645b2ea49a84bbd86368488603945195da476baf257ff06c85e"
+    },
+    {
+      "path": "src/constructFrom/index.ts",
+      "upstreamPath": "src/constructFrom/index.ts",
+      "sha256": "09473b99a0b54be9f14f28ab9a37d15c3d2bf94069fafc900eb760db4478b403"
+    },
+    {
+      "path": "src/toDate/index.ts",
+      "upstreamPath": "src/toDate/index.ts",
+      "sha256": "1ce328da42e0c6c3258b0253ff434306e8980789a4879415f4a687f7e239d9b6"
+    },
+    {
+      "path": "src/constants/index.ts",
+      "upstreamPath": "src/constants/index.ts",
+      "sha256": "aea1c60f9bdb446d9acc2099e4eecba797238925873cb654dae7f37dd7e19f47"
+    },
+    {
+      "path": "src/types.ts",
+      "upstreamPath": "src/types.ts",
+      "sha256": "0cfad83a7c9bb9fc63cf3c929d377b402518967205d0fecb357936d679a7ea98"
+    },
+    {
+      "path": "src/locale/types.ts",
+      "upstreamPath": "src/locale/types.ts",
+      "sha256": "13516f389b668919ae5cf08cf1154b916bd2a548002d2112e3b8b42948b7e9ed"
+    },
+    {
+      "path": "src/fp/types.ts",
+      "upstreamPath": "src/fp/types.ts",
+      "sha256": "e0157b4526518fd04b464a3f1dd84fa29a2f2c05fe9733266d73ac9bb16c288c"
+    },
+    {
+      "path": "LICENSE",
+      "upstreamPath": "LICENSE.md",
+      "sha256": "8d3951c38967b964b1fe259bfd200c2647cc04c858b55a4414e3122a60f1ef4b"
+    },
+    {
+      "path": "upstream-tests/parseISO.test.ts",
+      "upstreamPath": "src/parseISO/test.ts",
+      "sha256": "a472101b535c54136d11444e8ce03b081369bf70bafe683d6c966884754afe8e"
+    }
+  ]
+}

@@ -1,0 +1,642 @@
+{
+  "schema": "code-transplant.capsule.v1",
+  "entry": {
+    "file": "parseISO/index.ts",
+    "exportName": "parseISO"
+  },
+  "files": [
+    {
+      "path": "constants/index.ts",
+      "sourceSha256": "aea1c60f9bdb446d9acc2099e4eecba797238925873cb654dae7f37dd7e19f47",
+      "outputSha256": "86532c027e256920b080586ee017022e276bcc60c671b39bed7356f28168b18f",
+      "selectedSymbols": [
+        "constructFromSymbol",
+        "millisecondsInHour",
+        "millisecondsInMinute"
+      ],
+      "sourceLines": 217,
+      "outputLines": 25
+    },
+    {
+      "path": "constructFrom/index.ts",
+      "sourceSha256": "09473b99a0b54be9f14f28ab9a37d15c3d2bf94069fafc900eb760db4478b403",
+      "outputSha256": "38e8f0aebb3a4ea46ed1ede3431b74b3220e781dfc239ffb65b7f7580b729ed8",
+      "selectedSymbols": [
+        "constructFrom"
+      ],
+      "sourceLines": 61,
+      "outputLines": 47
+    },
+    {
+      "path": "parseISO/index.ts",
+      "sourceSha256": "b20371e2bb654645b2ea49a84bbd86368488603945195da476baf257ff06c85e",
+      "outputSha256": "e847e1728baf798449384d962bbb97bf7be8e9d2072e6fbaec5e0c8658a8ed73",
+      "selectedSymbols": [
+        "DateString",
+        "ParseISOOptions",
+        "ParsedYear",
+        "dateRegex",
+        "dayOfISOWeekYear",
+        "daysInMonths",
+        "isLeapYearIndex",
+        "parseDate",
+        "parseDateUnit",
+        "parseISO",
+        "parseTime",
+        "parseTimeUnit",
+        "parseTimezone",
+        "parseYear",
+        "patterns",
+        "splitDateString",
+        "timeRegex",
+        "timezoneRegex",
+        "validateDate",
+        "validateDayOfYearDate",
+        "validateTime",
+        "validateTimezone",
+        "validateWeekDate"
+      ],
+      "sourceLines": 320,
+      "outputLines": 247
+    },
+    {
+      "path": "toDate/index.ts",
+      "sourceSha256": "1ce328da42e0c6c3258b0253ff434306e8980789a4879415f4a687f7e239d9b6",
+      "outputSha256": "07b36be6ab83cf0a84a77285a24b11347cf10b68d7505063e32cfe721473bb39",
+      "selectedSymbols": [
+        "toDate"
+      ],
+      "sourceLines": 52,
+      "outputLines": 45
+    },
+    {
+      "path": "types.ts",
+      "sourceSha256": "0cfad83a7c9bb9fc63cf3c929d377b402518967205d0fecb357936d679a7ea98",
+      "outputSha256": "230ac0db5cd655ef6a5c9d8661327c0ba17776bbb4cb7305cd7a700a4cff78c4",
+      "selectedSymbols": [
+        "ConstructableDate",
+        "ContextFn",
+        "ContextOptions",
+        "DateArg",
+        "GenericDateConstructor"
+      ],
+      "sourceLines": 346,
+      "outputLines": 68
+    }
+  ],
+  "symbols": [
+    {
+      "id": "constants/index.ts#constructFromSymbol@216",
+      "file": "constants/index.ts",
+      "name": "constructFromSymbol",
+      "startLine": 216,
+      "endLine": 216,
+      "kind": "VariableDeclaration"
+    },
+    {
+      "id": "constants/index.ts#millisecondsInHour@98",
+      "file": "constants/index.ts",
+      "name": "millisecondsInHour",
+      "startLine": 98,
+      "endLine": 98,
+      "kind": "VariableDeclaration"
+    },
+    {
+      "id": "constants/index.ts#millisecondsInMinute@91",
+      "file": "constants/index.ts",
+      "name": "millisecondsInMinute",
+      "startLine": 91,
+      "endLine": 91,
+      "kind": "VariableDeclaration"
+    },
+    {
+      "id": "constructFrom/index.ts#constructFrom@44",
+      "file": "constructFrom/index.ts",
+      "name": "constructFrom",
+      "startLine": 44,
+      "endLine": 60,
+      "kind": "FunctionDeclaration"
+    },
+    {
+      "id": "parseISO/index.ts#dateRegex@117",
+      "file": "parseISO/index.ts",
+      "name": "dateRegex",
+      "startLine": 117,
+      "endLine": 118,
+      "kind": "VariableDeclaration"
+    },
+    {
+      "id": "parseISO/index.ts#DateString@100",
+      "file": "parseISO/index.ts",
+      "name": "DateString",
+      "startLine": 100,
+      "endLine": 104,
+      "kind": "InterfaceDeclaration"
+    },
+    {
+      "id": "parseISO/index.ts#dayOfISOWeekYear@259",
+      "file": "parseISO/index.ts",
+      "name": "dayOfISOWeekYear",
+      "startLine": 259,
+      "endLine": 270,
+      "kind": "FunctionDeclaration"
+    },
+    {
+      "id": "parseISO/index.ts#daysInMonths@275",
+      "file": "parseISO/index.ts",
+      "name": "daysInMonths",
+      "startLine": 275,
+      "endLine": 275,
+      "kind": "VariableDeclaration"
+    },
+    {
+      "id": "parseISO/index.ts#isLeapYearIndex@277",
+      "file": "parseISO/index.ts",
+      "name": "isLeapYearIndex",
+      "startLine": 277,
+      "endLine": 279,
+      "kind": "FunctionDeclaration"
+    },
+    {
+      "id": "parseISO/index.ts#parseDate@184",
+      "file": "parseISO/index.ts",
+      "name": "parseDate",
+      "startLine": 184,
+      "endLine": 215,
+      "kind": "FunctionDeclaration"
+    },
+    {
+      "id": "parseISO/index.ts#parseDateUnit@217",
+      "file": "parseISO/index.ts",
+      "name": "parseDateUnit",
+      "startLine": 217,
+      "endLine": 219,
+      "kind": "FunctionDeclaration"
+    },
+    {
+      "id": "parseISO/index.ts#ParsedYear@106",
+      "file": "parseISO/index.ts",
+      "name": "ParsedYear",
+      "startLine": 106,
+      "endLine": 109,
+      "kind": "InterfaceDeclaration"
+    },
+    {
+      "id": "parseISO/index.ts#parseISO@51",
+      "file": "parseISO/index.ts",
+      "name": "parseISO",
+      "startLine": 51,
+      "endLine": 98,
+      "kind": "FunctionDeclaration"
+    },
+    {
+      "id": "parseISO/index.ts#ParseISOOptions@12",
+      "file": "parseISO/index.ts",
+      "name": "ParseISOOptions",
+      "startLine": 12,
+      "endLine": 16,
+      "kind": "InterfaceDeclaration"
+    },
+    {
+      "id": "parseISO/index.ts#parseTime@221",
+      "file": "parseISO/index.ts",
+      "name": "parseTime",
+      "startLine": 221,
+      "endLine": 236,
+      "kind": "FunctionDeclaration"
+    },
+    {
+      "id": "parseISO/index.ts#parseTimeUnit@238",
+      "file": "parseISO/index.ts",
+      "name": "parseTimeUnit",
+      "startLine": 238,
+      "endLine": 240,
+      "kind": "FunctionDeclaration"
+    },
+    {
+      "id": "parseISO/index.ts#parseTimezone@242",
+      "file": "parseISO/index.ts",
+      "name": "parseTimezone",
+      "startLine": 242,
+      "endLine": 257,
+      "kind": "FunctionDeclaration"
+    },
+    {
+      "id": "parseISO/index.ts#parseYear@161",
+      "file": "parseISO/index.ts",
+      "name": "parseYear",
+      "startLine": 161,
+      "endLine": 182,
+      "kind": "FunctionDeclaration"
+    },
+    {
+      "id": "parseISO/index.ts#patterns@111",
+      "file": "parseISO/index.ts",
+      "name": "patterns",
+      "startLine": 111,
+      "endLine": 115,
+      "kind": "VariableDeclaration"
+    },
+    {
+      "id": "parseISO/index.ts#splitDateString@123",
+      "file": "parseISO/index.ts",
+      "name": "splitDateString",
+      "startLine": 123,
+      "endLine": 159,
+      "kind": "FunctionDeclaration"
+    },
+    {
+      "id": "parseISO/index.ts#timeRegex@119",
+      "file": "parseISO/index.ts",
+      "name": "timeRegex",
+      "startLine": 119,
+      "endLine": 120,
+      "kind": "VariableDeclaration"
+    },
+    {
+      "id": "parseISO/index.ts#timezoneRegex@121",
+      "file": "parseISO/index.ts",
+      "name": "timezoneRegex",
+      "startLine": 121,
+      "endLine": 121,
+      "kind": "VariableDeclaration"
+    },
+    {
+      "id": "parseISO/index.ts#validateDate@281",
+      "file": "parseISO/index.ts",
+      "name": "validateDate",
+      "startLine": 281,
+      "endLine": 288,
+      "kind": "FunctionDeclaration"
+    },
+    {
+      "id": "parseISO/index.ts#validateDayOfYearDate@290",
+      "file": "parseISO/index.ts",
+      "name": "validateDayOfYearDate",
+      "startLine": 290,
+      "endLine": 292,
+      "kind": "FunctionDeclaration"
+    },
+    {
+      "id": "parseISO/index.ts#validateTime@298",
+      "file": "parseISO/index.ts",
+      "name": "validateTime",
+      "startLine": 298,
+      "endLine": 315,
+      "kind": "FunctionDeclaration"
+    },
+    {
+      "id": "parseISO/index.ts#validateTimezone@317",
+      "file": "parseISO/index.ts",
+      "name": "validateTimezone",
+      "startLine": 317,
+      "endLine": 319,
+      "kind": "FunctionDeclaration"
+    },
+    {
+      "id": "parseISO/index.ts#validateWeekDate@294",
+      "file": "parseISO/index.ts",
+      "name": "validateWeekDate",
+      "startLine": 294,
+      "endLine": 296,
+      "kind": "FunctionDeclaration"
+    },
+    {
+      "id": "toDate/index.ts#toDate@42",
+      "file": "toDate/index.ts",
+      "name": "toDate",
+      "startLine": 42,
+      "endLine": 51,
+      "kind": "FunctionDeclaration"
+    },
+    {
+      "id": "types.ts#ConstructableDate@17",
+      "file": "types.ts",
+      "name": "ConstructableDate",
+      "startLine": 17,
+      "endLine": 21,
+      "kind": "InterfaceDeclaration"
+    },
+    {
+      "id": "types.ts#ContextFn@338",
+      "file": "types.ts",
+      "name": "ContextFn",
+      "startLine": 338,
+      "endLine": 340,
+      "kind": "TypeAliasDeclaration"
+    },
+    {
+      "id": "types.ts#ContextOptions@325",
+      "file": "types.ts",
+      "name": "ContextOptions",
+      "startLine": 325,
+      "endLine": 331,
+      "kind": "InterfaceDeclaration"
+    },
+    {
+      "id": "types.ts#DateArg@10",
+      "file": "types.ts",
+      "name": "DateArg",
+      "startLine": 10,
+      "endLine": 10,
+      "kind": "TypeAliasDeclaration"
+    },
+    {
+      "id": "types.ts#GenericDateConstructor@29",
+      "file": "types.ts",
+      "name": "GenericDateConstructor",
+      "startLine": 29,
+      "endLine": 70,
+      "kind": "InterfaceDeclaration"
+    }
+  ],
+  "edges": [
+    {
+      "from": "constructFrom/index.ts#constructFrom@44",
+      "to": "constants/index.ts#constructFromSymbol@216",
+      "kind": "value"
+    },
+    {
+      "from": "constructFrom/index.ts#constructFrom@44",
+      "to": "types.ts#ConstructableDate@17",
+      "kind": "type"
+    },
+    {
+      "from": "constructFrom/index.ts#constructFrom@44",
+      "to": "types.ts#ContextFn@338",
+      "kind": "type"
+    },
+    {
+      "from": "constructFrom/index.ts#constructFrom@44",
+      "to": "types.ts#DateArg@10",
+      "kind": "type"
+    },
+    {
+      "from": "constructFrom/index.ts#constructFrom@44",
+      "to": "types.ts#GenericDateConstructor@29",
+      "kind": "type"
+    },
+    {
+      "from": "parseISO/index.ts#parseDate@184",
+      "to": "parseISO/index.ts#dateRegex@117",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#parseDate@184",
+      "to": "parseISO/index.ts#dayOfISOWeekYear@259",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#parseDate@184",
+      "to": "parseISO/index.ts#parseDateUnit@217",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#parseDate@184",
+      "to": "parseISO/index.ts#validateDate@281",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#parseDate@184",
+      "to": "parseISO/index.ts#validateDayOfYearDate@290",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#parseDate@184",
+      "to": "parseISO/index.ts#validateWeekDate@294",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#parseISO@51",
+      "to": "constructFrom/index.ts#constructFrom@44",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#parseISO@51",
+      "to": "parseISO/index.ts#parseDate@184",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#parseISO@51",
+      "to": "parseISO/index.ts#ParseISOOptions@12",
+      "kind": "type"
+    },
+    {
+      "from": "parseISO/index.ts#parseISO@51",
+      "to": "parseISO/index.ts#parseTime@221",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#parseISO@51",
+      "to": "parseISO/index.ts#parseTimezone@242",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#parseISO@51",
+      "to": "parseISO/index.ts#parseYear@161",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#parseISO@51",
+      "to": "parseISO/index.ts#splitDateString@123",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#parseISO@51",
+      "to": "toDate/index.ts#toDate@42",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#ParseISOOptions@12",
+      "to": "types.ts#ContextOptions@325",
+      "kind": "type"
+    },
+    {
+      "from": "parseISO/index.ts#parseTime@221",
+      "to": "constants/index.ts#millisecondsInHour@98",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#parseTime@221",
+      "to": "constants/index.ts#millisecondsInMinute@91",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#parseTime@221",
+      "to": "parseISO/index.ts#parseTimeUnit@238",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#parseTime@221",
+      "to": "parseISO/index.ts#timeRegex@119",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#parseTime@221",
+      "to": "parseISO/index.ts#validateTime@298",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#parseTimezone@242",
+      "to": "constants/index.ts#millisecondsInHour@98",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#parseTimezone@242",
+      "to": "constants/index.ts#millisecondsInMinute@91",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#parseTimezone@242",
+      "to": "parseISO/index.ts#timezoneRegex@121",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#parseTimezone@242",
+      "to": "parseISO/index.ts#validateTimezone@317",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#parseYear@161",
+      "to": "parseISO/index.ts#ParsedYear@106",
+      "kind": "type"
+    },
+    {
+      "from": "parseISO/index.ts#splitDateString@123",
+      "to": "parseISO/index.ts#DateString@100",
+      "kind": "type"
+    },
+    {
+      "from": "parseISO/index.ts#splitDateString@123",
+      "to": "parseISO/index.ts#patterns@111",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#validateDate@281",
+      "to": "parseISO/index.ts#daysInMonths@275",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#validateDate@281",
+      "to": "parseISO/index.ts#isLeapYearIndex@277",
+      "kind": "value"
+    },
+    {
+      "from": "parseISO/index.ts#validateDayOfYearDate@290",
+      "to": "parseISO/index.ts#isLeapYearIndex@277",
+      "kind": "value"
+    },
+    {
+      "from": "toDate/index.ts#toDate@42",
+      "to": "constructFrom/index.ts#constructFrom@44",
+      "kind": "value"
+    },
+    {
+      "from": "toDate/index.ts#toDate@42",
+      "to": "types.ts#ConstructableDate@17",
+      "kind": "type"
+    },
+    {
+      "from": "toDate/index.ts#toDate@42",
+      "to": "types.ts#ContextFn@338",
+      "kind": "type"
+    },
+    {
+      "from": "toDate/index.ts#toDate@42",
+      "to": "types.ts#DateArg@10",
+      "kind": "type"
+    },
+    {
+      "from": "types.ts#ConstructableDate@17",
+      "to": "constants/index.ts#constructFromSymbol@216",
+      "kind": "value"
+    },
+    {
+      "from": "types.ts#ConstructableDate@17",
+      "to": "types.ts#DateArg@10",
+      "kind": "type"
+    },
+    {
+      "from": "types.ts#ContextFn@338",
+      "to": "types.ts#DateArg@10",
+      "kind": "type"
+    },
+    {
+      "from": "types.ts#ContextOptions@325",
+      "to": "types.ts#ContextFn@338",
+      "kind": "type"
+    },
+    {
+      "from": "types.ts#GenericDateConstructor@29",
+      "to": "types.ts#DateArg@10",
+      "kind": "type"
+    }
+  ],
+  "assumptions": [
+    {
+      "kind": "caller-callback",
+      "detail": "A caller-provided function is invoked; its effects and return type belong to the target's explicit interface",
+      "file": "constructFrom/index.ts",
+      "line": 51
+    },
+    {
+      "kind": "caller-constructor",
+      "detail": "A constructor supplied through the caller's object is invoked; verification covers only constructors in the declared contract",
+      "file": "constructFrom/index.ts",
+      "line": 57
+    },
+    {
+      "kind": "caller-protocol",
+      "detail": "An object method selected through a computed key is invoked; callers must retain that protocol",
+      "file": "constructFrom/index.ts",
+      "line": 54
+    },
+    {
+      "kind": "date-runtime",
+      "detail": "JavaScript Date semantics and the process time zone are inherited; local dates require verification in each supported TZ",
+      "file": "constructFrom/index.ts",
+      "line": 45
+    },
+    {
+      "kind": "date-runtime",
+      "detail": "JavaScript Date semantics and the process time zone are inherited; local dates require verification in each supported TZ",
+      "file": "parseISO/index.ts",
+      "line": 52
+    },
+    {
+      "kind": "date-runtime",
+      "detail": "JavaScript Date semantics and the process time zone are inherited; local dates require verification in each supported TZ",
+      "file": "toDate/index.ts",
+      "line": 43
+    },
+    {
+      "kind": "date-runtime",
+      "detail": "JavaScript Date semantics and the process time zone are inherited; local dates require verification in each supported TZ",
+      "file": "types.ts",
+      "line": 325
+    },
+    {
+      "kind": "symbol-registry",
+      "detail": "Shared JavaScript Symbol.for registry key: constructDateFrom",
+      "file": "constants/index.ts",
+      "line": 216
+    },
+    {
+      "kind": "symbol-runtime",
+      "detail": "The target must preserve JavaScript symbol identity and any caller-provided extension protocol",
+      "file": "constants/index.ts",
+      "line": 216
+    },
+    {
+      "kind": "verification-boundary",
+      "detail": "Extraction proves a statically closed, type-checked slice; behavioral preservation still requires an explicit contract and differential evidence"
+    }
+  ],
+  "provenance": {
+    "repository": "https://github.com/date-fns/date-fns",
+    "revision": "313b902b9a72c64501074db9bc2b9897d2db5140",
+    "licenseFile": "LICENSE",
+    "licenseSha256": "8d3951c38967b964b1fe259bfd200c2647cc04c858b55a4414e3122a60f1ef4b"
+  },
+  "digest": "63b4bfd21af6d9ece2f932fd31caf4f63ffc2df7af48687b0b31cf1824500272"
+}

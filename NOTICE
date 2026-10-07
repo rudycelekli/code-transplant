@@ -1,0 +1,10 @@
+Code Transplant
+Copyright 2026 Rudy M. Celekli / Gradia
+https://gradiahq.com
+
+The tooling is licensed under Apache-2.0.
+The examples/donor/date-fns directory contains unchanged source files from
+date-fns v4.1.0, revision 313b902b9a72c64501074db9bc2b9897d2db5140.
+Those files remain under the MIT license reproduced in that directory.
+Generated donor capsules retain the donor's license; extraction does not
+relicense third-party code or determine legal compatibility for a new host.

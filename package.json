@@ -1,0 +1,22 @@
+{
+  "name": "@gradia/code-transplant",
+  "version": "0.1.0",
+  "description": "Extract TypeScript parsers with dependency evidence and differential verification.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "author": "Rudy M. Celekli <rudy@gradiahq.com>",
+  "bin": { "code-transplant": "dist/cli.js" },
+  "exports": "./dist/index.js",
+  "files": ["dist", "README.md", "LICENSE", "NOTICE"],
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsx --test tests/*.test.ts",
+    "demo": "tsx src/cli.ts demo",
+    "check": "npm run build && npm test && npm run demo"
+  },
+  "dependencies": { "typescript": "5.9.3" },
+  "devDependencies": { "@types/node": "22.18.6", "tsx": "4.20.6" },
+  "repository": { "type": "git", "url": "https://github.com/rudycelekli/code-transplant.git" },
+  "homepage": "https://gradiahq.com/tools/code-transplant"
+}

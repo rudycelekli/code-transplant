@@ -1,0 +1,162 @@
+{
+  "schema": "code-transplant.demo.v1",
+  "verdict": "VERIFIED",
+  "donor": {
+    "repository": "https://github.com/date-fns/date-fns",
+    "revision": "313b902b9a72c64501074db9bc2b9897d2db5140"
+  },
+  "cases": 695,
+  "contexts": [
+    "UTC",
+    "New_York",
+    "Kathmandu"
+  ],
+  "comparisons": 2085,
+  "mismatches": 0,
+  "controls": [
+    {
+      "name": "offset-sign-corruption",
+      "detected": true,
+      "mismatches": 558,
+      "example": {
+        "context": "UTC",
+        "caseId": "iso-0043",
+        "input": {
+          "text": "2014-02-11T11:30:30+01:00",
+          "eventId": "iso-0043"
+        },
+        "reference": {
+          "kind": "value",
+          "value": {
+            "parser": {
+              "valid": true,
+              "epochMs": 1392114630000,
+              "localParts": [
+                2014,
+                2,
+                11,
+                10,
+                30,
+                30,
+                0
+              ]
+            },
+            "host": {
+              "accepted": true,
+              "event": {
+                "id": "iso-0043",
+                "occurredAtEpochMs": 1392114630000,
+                "occurredAtIso": "2014-02-11T10:30:30.000Z"
+              }
+            }
+          }
+        },
+        "candidate": {
+          "kind": "value",
+          "value": {
+            "parser": {
+              "valid": true,
+              "epochMs": 1392121830000,
+              "localParts": [
+                2014,
+                2,
+                11,
+                12,
+                30,
+                30,
+                0
+              ]
+            },
+            "host": {
+              "accepted": true,
+              "event": {
+                "id": "iso-0043",
+                "occurredAtEpochMs": 1392121830000,
+                "occurredAtIso": "2014-02-11T12:30:30.000Z"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "invalid-date-collapse",
+      "detected": true,
+      "mismatches": 840,
+      "example": {
+        "context": "UTC",
+        "caseId": "iso-0011",
+        "input": {
+          "text": "1900-366",
+          "eventId": "iso-0011"
+        },
+        "reference": {
+          "kind": "value",
+          "value": {
+            "parser": {
+              "valid": false,
+              "epochMs": null,
+              "localParts": null
+            },
+            "host": {
+              "accepted": false,
+              "error": {
+                "code": "INVALID_TIMESTAMP",
+                "text": "1900-366"
+              }
+            }
+          }
+        },
+        "candidate": {
+          "kind": "value",
+          "value": {
+            "parser": {
+              "valid": true,
+              "epochMs": 0,
+              "localParts": [
+                1970,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            "host": {
+              "accepted": true,
+              "event": {
+                "id": "iso-0011",
+                "occurredAtEpochMs": 0,
+                "occurredAtIso": "1970-01-01T00:00:00.000Z"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "reduction": {
+    "donorFiles": 7,
+    "capsuleFiles": 5,
+    "donorBytes": 40628,
+    "capsuleBytes": 16815,
+    "excludedBytes": 23813
+  },
+  "receiver": {
+    "kind": "new audit-importer example",
+    "parserPort": "(text: string, options?: {additionalDigits?: 0|1|2}) => Date",
+    "donorPackageDependency": false,
+    "customDateContexts": "excluded"
+  },
+  "runtime": {
+    "node": "v22.19.0",
+    "typescript": "5.9.3",
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "reportPath": ".transplant/runs/a9f90e9a-571a-410b-b548-5a24bbdf9da0/report.json",
+  "capsulePath": ".transplant/runs/a9f90e9a-571a-410b-b548-5a24bbdf9da0/capsule",
+  "reportDigest": "e2f900b89ba7d0c7a4155da14de8f92bcb5b04efdce1851bd3d65f764d179010",
+  "scope": "Finite corpus agreement; no universal equivalence claim"
+}

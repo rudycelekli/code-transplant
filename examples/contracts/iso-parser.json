@@ -1,0 +1,12 @@
+{
+  "schema": "code-transplant.interface.v1",
+  "name": "iso-text-to-audit-event",
+  "language": "TypeScript",
+  "input": { "text": "string", "additionalDigits": "optional 0 | 1 | 2", "eventId": "string" },
+  "parserPort": "(text: string, options?: {additionalDigits?: 0|1|2}) => Date",
+  "output": "Tagged value with valid/invalid Date observation and audit import result, or tagged thrown name/message",
+  "observations": ["Date validity", "epoch milliseconds", "local calendar components", "host acceptance and event payload"],
+  "assumptions": ["Ordinary JavaScript Date construction", "Node.js runtime", "Process timezone is explicit per test context"],
+  "excluded": ["Custom Date subclasses or options.in context factories", "Non-string parser inputs", "Universal ISO 8601 compliance", "Universal equivalence"],
+  "meaning": "Agreement with the pinned donor under this finite corpus and recorded contexts. It does not claim correctness against an independent ISO specification."
+}
